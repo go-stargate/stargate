@@ -1,0 +1,2 @@
+{{ if exists "/stargate_test/key" }}value: {{ getv "/stargate_test/key" }}{{ end }}
+{{- if exists "/stargate_test/doesnotexist" }}This line will not be printed value: {{ getv "/stargate_test/key" }}{{ end }}

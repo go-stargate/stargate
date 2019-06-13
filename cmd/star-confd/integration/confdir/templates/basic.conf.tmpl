@@ -1,0 +1,6 @@
+hostname: {{ getenv "HOSTNAME" }}
+[database]
+host={{ getv "/stargate_test/database/host" }}
+password={{ getv "/stargate_test/database/password" }}
+port={{ getv "/stargate_test/database/port" }}
+username={{ getv "/stargate_test/database/username" }}
